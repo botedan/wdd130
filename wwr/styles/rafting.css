@@ -26,6 +26,65 @@ p {
     padding: 0; /* Remove o preenchimento */
 }
 
+.hero h1 {
+    max-width: 840px;
+    position: absolute;
+    top: 15px; /* Ajuste conforme necessário */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    color: #fff; /* cor do texto */
+    background-color: rgba(0, 0, 0, 0.5); /* fundo semi-transparente */
+    padding: 10px 20px; /* ajuste o preenchimento conforme necessário */
+    z-index: 1; /* Garante que o título fique sobre a imagem */
+}
+
+.hero article img {
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente */
+    right: 0; /* Alinha à direita */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    width: 15%; /* ou o tamanho desejado */
+}
+
+.hero article p {
+    font-size: 1.5rem; /* Tamanho do texto */
+    text-align: left; /* Alinhamento do texto */
+    color: var(--accent2-color);
+}
+
+.hero article {
+    position: absolute;
+    top: 65%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza vertical e horizontalmente */
+    width: 50%; /* ou o tamanho desejado */
+    background-color: rgba(0, 0, 0, 0.5); /* fundo semi-transparente */
+    padding: 15px 250px; /* ajuste o preenchimento conforme necessário */
+    z-index: 1; /* Garante que o texto fique sobre a imagem */
+}
+
+.hero img {
+    display: block;
+    width: 100%; /* ou o tamanho desejado */
+    height: auto; /* para manter a proporção */
+}
+
+.hero {
+    position: relative;
+    overflow: hidden; /* Garante que o contêiner .hero se ajuste ao conteúdo */
+}
+
+
+.article{
+    position: absolute;
+    }
+
+.article  img{
+    position: absolute;
+    width: 30%;    
+}
+    
+
 .map-container {
     margin: 0 auto; /* Centraliza horizontalmente */
     width: 600px; /* Define a largura do mapa */
@@ -163,7 +222,7 @@ footer a{
 }
 
 h1 {
-    ;
+    position: absolute;
     text-align: center;
     color: #333;
 }
